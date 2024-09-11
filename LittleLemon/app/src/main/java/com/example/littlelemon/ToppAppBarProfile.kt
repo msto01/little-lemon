@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.navigation.NavGraph.Companion.findStartDestination
 
 @Composable
 fun TopAppBarProfile(navController: NavController) {
@@ -34,7 +35,7 @@ fun TopAppBarProfile(navController: NavController) {
             modifier = Modifier.fillMaxWidth(0.5F)
                 .padding(horizontal = 36.dp)
         )
-        IconButton(onClick = { navController.navigate("Home") }) {
+        IconButton(onClick = { navController.navigate("Home")}) {
             Image(
                 painter = painterResource(id = R.drawable.baseline_home_24),
                 contentDescription = "Profile Photo",
