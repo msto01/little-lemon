@@ -47,19 +47,6 @@ fun Profile(navController: NavHostController, sharedPreferences: SharedPreferenc
                 thickness = 1.dp, color = LittleLemonColor.green
             )
 
-            /*Column(
-                Modifier
-                    .padding(top = 20.dp, bottom = 20.dp, start = 20.dp, end = 20.dp)
-                    .fillMaxWidth(),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            ) {
-                Image(
-                    painter = painterResource(id = R.drawable.little_lemon_logo),
-                    contentDescription = "Little Lemon logo",
-                )
-            } */
-
         Row(
             horizontalArrangement = Arrangement.Start,
             modifier = Modifier.padding(top = 50.dp, bottom = 50.dp, start = 20.dp)
